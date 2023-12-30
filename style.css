@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@keyframes load {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    background-color: #141c27;
+    background: linear-gradient(380deg, rgb(60, 47, 68) 0%, #242c46 100%);
+    color: white;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+h1>span {
+    font-weight: 800;
+    background: #FF9100;
+    background: linear-gradient(to right, #ebf565 0%, #F5C400 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#logo {
+    float: right;
+    position: relative;
+    bottom: 170px;
+    right: 20px;
+}
+
+.desc {
+    color: #5e6a7e;
+}
+
+.btnwithoutline,
+.btnwithoutline::before {
+    padding: 10px 50px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+}
+
+.btnfill,
+.btnfill::before {
+    padding: 10px 50px;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    margin-right: 30px;
+}
+
+.btnfillgradient,
+.btnfillgradient::before {
+    transition: ease all 0.5s;
+    box-shadow: #f0dd34 0px 0px 30px;
+    background: rgb(235, 245, 101);
+    background: linear-gradient(102deg, rgba(235, 245, 101, 1) 0%, rgba(245, 196, 0, 1) 100%);
+    padding: 10px 50px;
+    border: none;
+    color: black;
+    border-radius: 5px;
+    margin-right: 30px;
+}
+
+.btnfillgradient:hover {
+    transition: ease all 0.5s;
+    box-shadow: #f0dd34 0px 0px 10px;
+    background: rgb(247, 255, 128);
+    background: linear-gradient(102deg, rgb(247, 255, 130) 0%, rgb(255, 215, 53) 100%);
+}
+
+.btnwithoutline:hover {
+    transition: ease all 0.5s;
+    background-color: white;
+    color: black;
+}
+
+.pusha {
+    margin-right: 57px;
+}
+
+center>a,
+center>a::before {
+    transition: ease all 0.5s;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-bottom: 3px solid white;
+    padding: 5px;
+}
+
+center>a:hover {
+    transition: ease all 0.5s;
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
+}
+
+img {
+    border-radius: 15px;
+}
+
+#commands>.left {
+    position: relative;
+    bottom: 150px;
+    left: 50px;
+}
+
+#commands>.right {
+    position: relative;
+    top: 150px;
+    left: 200px;
+}
+
+#commands>h2 {
+    text-align: center;
+    font-size: 4.5rem;
+    font-family: monospace, sans-serif;
+    color: rgb(255, 255, 255);
+}
